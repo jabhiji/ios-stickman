@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E85AD88190E319000939748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E85AD87190E319000939748 /* Foundation.framework */; };
+		1E85AD8A190E319000939748 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E85AD89190E319000939748 /* CoreGraphics.framework */; };
+		1E85AD8C190E319000939748 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E85AD8B190E319000939748 /* UIKit.framework */; };
+		1E85AD92190E319000939748 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E85AD90190E319000939748 /* InfoPlist.strings */; };
+		1E85AD94190E319000939748 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E85AD93190E319000939748 /* main.m */; };
+		1E85AD98190E319000939748 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E85AD97190E319000939748 /* AppDelegate.m */; };
+		1E85AD9B190E319000939748 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E85AD99190E319000939748 /* Main.storyboard */; };
+		1E85AD9E190E319000939748 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E85AD9D190E319000939748 /* ViewController.m */; };
+		1E85ADA0190E319000939748 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E85AD9F190E319000939748 /* Images.xcassets */; };
+		1E85ADA7190E319000939748 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E85ADA6190E319000939748 /* XCTest.framework */; };
+		1E85ADA8190E319000939748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E85AD87190E319000939748 /* Foundation.framework */; };
+		1E85ADA9190E319000939748 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E85AD8B190E319000939748 /* UIKit.framework */; };
+		1E85ADB1190E319000939748 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADAF190E319000939748 /* InfoPlist.strings */; };
+		1E85ADB3190E319000939748 /* iOS_StickManTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E85ADB2190E319000939748 /* iOS_StickManTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E85ADAA190E319000939748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E85AD7C190E319000939748 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E85AD83190E319000939748;
+			remoteInfo = "iOS-StickMan";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E85AD84190E319000939748 /* iOS-StickMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-StickMan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E85AD87190E319000939748 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1E85AD89190E319000939748 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1E85AD8B190E319000939748 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1E85AD8F190E319000939748 /* iOS-StickMan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-StickMan-Info.plist"; sourceTree = "<group>"; };
+		1E85AD91190E319000939748 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1E85AD93190E319000939748 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1E85AD95190E319000939748 /* iOS-StickMan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-StickMan-Prefix.pch"; sourceTree = "<group>"; };
+		1E85AD96190E319000939748 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1E85AD97190E319000939748 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1E85AD9A190E319000939748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E85AD9C190E319000939748 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1E85AD9D190E319000939748 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1E85AD9F190E319000939748 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1E85ADA5190E319000939748 /* iOS-StickManTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-StickManTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E85ADA6190E319000939748 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1E85ADAE190E319000939748 /* iOS-StickManTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-StickManTests-Info.plist"; sourceTree = "<group>"; };
+		1E85ADB0190E319000939748 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1E85ADB2190E319000939748 /* iOS_StickManTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_StickManTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E85AD81190E319000939748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E85AD8A190E319000939748 /* CoreGraphics.framework in Frameworks */,
+				1E85AD8C190E319000939748 /* UIKit.framework in Frameworks */,
+				1E85AD88190E319000939748 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E85ADA2190E319000939748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E85ADA7190E319000939748 /* XCTest.framework in Frameworks */,
+				1E85ADA9190E319000939748 /* UIKit.framework in Frameworks */,
+				1E85ADA8190E319000939748 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E85AD7B190E319000939748 = {
+			isa = PBXGroup;
+			children = (
+				1E85AD8D190E319000939748 /* iOS-StickMan */,
+				1E85ADAC190E319000939748 /* iOS-StickManTests */,
+				1E85AD86190E319000939748 /* Frameworks */,
+				1E85AD85190E319000939748 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E85AD85190E319000939748 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E85AD84190E319000939748 /* iOS-StickMan.app */,
+				1E85ADA5190E319000939748 /* iOS-StickManTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E85AD86190E319000939748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E85AD87190E319000939748 /* Foundation.framework */,
+				1E85AD89190E319000939748 /* CoreGraphics.framework */,
+				1E85AD8B190E319000939748 /* UIKit.framework */,
+				1E85ADA6190E319000939748 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E85AD8D190E319000939748 /* iOS-StickMan */ = {
+			isa = PBXGroup;
+			children = (
+				1E85AD96190E319000939748 /* AppDelegate.h */,
+				1E85AD97190E319000939748 /* AppDelegate.m */,
+				1E85AD99190E319000939748 /* Main.storyboard */,
+				1E85AD9C190E319000939748 /* ViewController.h */,
+				1E85AD9D190E319000939748 /* ViewController.m */,
+				1E85AD9F190E319000939748 /* Images.xcassets */,
+				1E85AD8E190E319000939748 /* Supporting Files */,
+			);
+			path = "iOS-StickMan";
+			sourceTree = "<group>";
+		};
+		1E85AD8E190E319000939748 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E85AD8F190E319000939748 /* iOS-StickMan-Info.plist */,
+				1E85AD90190E319000939748 /* InfoPlist.strings */,
+				1E85AD93190E319000939748 /* main.m */,
+				1E85AD95190E319000939748 /* iOS-StickMan-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E85ADAC190E319000939748 /* iOS-StickManTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E85ADB2190E319000939748 /* iOS_StickManTests.m */,
+				1E85ADAD190E319000939748 /* Supporting Files */,
+			);
+			path = "iOS-StickManTests";
+			sourceTree = "<group>";
+		};
+		1E85ADAD190E319000939748 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E85ADAE190E319000939748 /* iOS-StickManTests-Info.plist */,
+				1E85ADAF190E319000939748 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E85AD83190E319000939748 /* iOS-StickMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E85ADB6190E319000939748 /* Build configuration list for PBXNativeTarget "iOS-StickMan" */;
+			buildPhases = (
+				1E85AD80190E319000939748 /* Sources */,
+				1E85AD81190E319000939748 /* Frameworks */,
+				1E85AD82190E319000939748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-StickMan";
+			productName = "iOS-StickMan";
+			productReference = 1E85AD84190E319000939748 /* iOS-StickMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E85ADA4190E319000939748 /* iOS-StickManTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E85ADB9190E319000939748 /* Build configuration list for PBXNativeTarget "iOS-StickManTests" */;
+			buildPhases = (
+				1E85ADA1190E319000939748 /* Sources */,
+				1E85ADA2190E319000939748 /* Frameworks */,
+				1E85ADA3190E319000939748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E85ADAB190E319000939748 /* PBXTargetDependency */,
+			);
+			name = "iOS-StickManTests";
+			productName = "iOS-StickManTests";
+			productReference = 1E85ADA5190E319000939748 /* iOS-StickManTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E85AD7C190E319000939748 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = XYZ;
+				TargetAttributes = {
+					1E85ADA4190E319000939748 = {
+						TestTargetID = 1E85AD83190E319000939748;
+					};
+				};
+			};
+			buildConfigurationList = 1E85AD7F190E319000939748 /* Build configuration list for PBXProject "iOS-StickMan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E85AD7B190E319000939748;
+			productRefGroup = 1E85AD85190E319000939748 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E85AD83190E319000939748 /* iOS-StickMan */,
+				1E85ADA4190E319000939748 /* iOS-StickManTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E85AD82190E319000939748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E85ADA0190E319000939748 /* Images.xcassets in Resources */,
+				1E85AD92190E319000939748 /* InfoPlist.strings in Resources */,
+				1E85AD9B190E319000939748 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E85ADA3190E319000939748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E85ADB1190E319000939748 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E85AD80190E319000939748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E85AD9E190E319000939748 /* ViewController.m in Sources */,
+				1E85AD98190E319000939748 /* AppDelegate.m in Sources */,
+				1E85AD94190E319000939748 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E85ADA1190E319000939748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E85ADB3190E319000939748 /* iOS_StickManTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E85ADAB190E319000939748 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E85AD83190E319000939748 /* iOS-StickMan */;
+			targetProxy = 1E85ADAA190E319000939748 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E85AD90190E319000939748 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E85AD91190E319000939748 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1E85AD99190E319000939748 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E85AD9A190E319000939748 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E85ADAF190E319000939748 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E85ADB0190E319000939748 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E85ADB4190E319000939748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1E85ADB5190E319000939748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E85ADB7190E319000939748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS-StickMan/iOS-StickMan-Prefix.pch";
+				INFOPLIST_FILE = "iOS-StickMan/iOS-StickMan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1E85ADB8190E319000939748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS-StickMan/iOS-StickMan-Prefix.pch";
+				INFOPLIST_FILE = "iOS-StickMan/iOS-StickMan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1E85ADBA190E319000939748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS-StickMan.app/iOS-StickMan";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS-StickMan/iOS-StickMan-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS-StickManTests/iOS-StickManTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1E85ADBB190E319000939748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS-StickMan.app/iOS-StickMan";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS-StickMan/iOS-StickMan-Prefix.pch";
+				INFOPLIST_FILE = "iOS-StickManTests/iOS-StickManTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E85AD7F190E319000939748 /* Build configuration list for PBXProject "iOS-StickMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E85ADB4190E319000939748 /* Debug */,
+				1E85ADB5190E319000939748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E85ADB6190E319000939748 /* Build configuration list for PBXNativeTarget "iOS-StickMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E85ADB7190E319000939748 /* Debug */,
+				1E85ADB8190E319000939748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E85ADB9190E319000939748 /* Build configuration list for PBXNativeTarget "iOS-StickManTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E85ADBA190E319000939748 /* Debug */,
+				1E85ADBB190E319000939748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E85AD7C190E319000939748 /* Project object */;
+}
