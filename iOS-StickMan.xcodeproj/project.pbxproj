@@ -33,6 +33,9 @@
 		1E85ADD0190E332E00939748 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC6190E332E00939748 /* sad.png */; };
 		1E85ADD1190E332E00939748 /* rightHandDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC7190E332E00939748 /* rightHandDown.png */; };
 		1E85ADD3190E3C7500939748 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADD2190E3C7500939748 /* empty.png */; };
+		1E85ADD7190E3DA800939748 /* hatButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADD4190E3DA800939748 /* hatButton.png */; };
+		1E85ADD8190E3DA800939748 /* sadButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADD5190E3DA800939748 /* sadButton.png */; };
+		1E85ADD9190E3DA800939748 /* happyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADD6190E3DA800939748 /* happyButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		1E85ADC6190E332E00939748 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
 		1E85ADC7190E332E00939748 /* rightHandDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightHandDown.png; sourceTree = "<group>"; };
 		1E85ADD2190E3C7500939748 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
+		1E85ADD4190E3DA800939748 /* hatButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hatButton.png; sourceTree = "<group>"; };
+		1E85ADD5190E3DA800939748 /* sadButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sadButton.png; sourceTree = "<group>"; };
+		1E85ADD6190E3DA800939748 /* happyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happyButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,9 @@
 		1E85AD8E190E319000939748 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E85ADD4190E3DA800939748 /* hatButton.png */,
+				1E85ADD5190E3DA800939748 /* sadButton.png */,
+				1E85ADD6190E3DA800939748 /* happyButton.png */,
 				1E85ADD2190E3C7500939748 /* empty.png */,
 				1E85ADBE190E332E00939748 /* legs.png */,
 				1E85ADBF190E332E00939748 /* baseline.png */,
@@ -273,7 +282,10 @@
 				1E85ADCF190E332E00939748 /* leftHandDown.png in Resources */,
 				1E85ADD0190E332E00939748 /* sad.png in Resources */,
 				1E85ADD1190E332E00939748 /* rightHandDown.png in Resources */,
+				1E85ADD7190E3DA800939748 /* hatButton.png in Resources */,
 				1E85ADCA190E332E00939748 /* rightHandUp.png in Resources */,
+				1E85ADD8190E3DA800939748 /* sadButton.png in Resources */,
+				1E85ADD9190E3DA800939748 /* happyButton.png in Resources */,
 				1E85ADC9190E332E00939748 /* baseline.png in Resources */,
 				1E85ADCC190E332E00939748 /* hat.png in Resources */,
 				1E85ADCB190E332E00939748 /* happy.png in Resources */,
