@@ -32,6 +32,7 @@
 		1E85ADCF190E332E00939748 /* leftHandDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC5190E332E00939748 /* leftHandDown.png */; };
 		1E85ADD0190E332E00939748 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC6190E332E00939748 /* sad.png */; };
 		1E85ADD1190E332E00939748 /* rightHandDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC7190E332E00939748 /* rightHandDown.png */; };
+		1E85ADD3190E3C7500939748 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADD2190E3C7500939748 /* empty.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		1E85ADC5190E332E00939748 /* leftHandDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftHandDown.png; sourceTree = "<group>"; };
 		1E85ADC6190E332E00939748 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
 		1E85ADC7190E332E00939748 /* rightHandDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightHandDown.png; sourceTree = "<group>"; };
+		1E85ADD2190E3C7500939748 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		1E85AD8E190E319000939748 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E85ADD2190E3C7500939748 /* empty.png */,
 				1E85ADBE190E332E00939748 /* legs.png */,
 				1E85ADBF190E332E00939748 /* baseline.png */,
 				1E85ADC0190E332E00939748 /* rightHandUp.png */,
@@ -263,6 +266,7 @@
 			files = (
 				1E85ADA0190E319000939748 /* Images.xcassets in Resources */,
 				1E85ADCE190E332E00939748 /* leftHandUp.png in Resources */,
+				1E85ADD3190E3C7500939748 /* empty.png in Resources */,
 				1E85ADC8190E332E00939748 /* legs.png in Resources */,
 				1E85AD92190E319000939748 /* InfoPlist.strings in Resources */,
 				1E85AD9B190E319000939748 /* Main.storyboard in Resources */,

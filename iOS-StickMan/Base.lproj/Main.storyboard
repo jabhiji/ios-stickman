@@ -77,11 +77,16 @@
                                 <rect key="frame" x="40" y="176" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-OR-3gP">
+                                <rect key="frame" x="40" y="176" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="displayImage" destination="H2B-tk-A3D" id="yFN-2m-XpM"/>
+                        <outlet property="hatLayer" destination="Cve-OR-3gP" id="UsT-Wy-t0V"/>
                         <outlet property="layer1" destination="zro-Ha-Mjx" id="3DS-EH-E5m"/>
                         <outlet property="layer2" destination="wLR-io-LO4" id="gJs-9w-4y1"/>
                         <outlet property="layer3" destination="wgd-bs-SY2" id="AWO-Qh-vJh"/>

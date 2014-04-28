@@ -17,7 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *layer2;
 @property (weak, nonatomic) IBOutlet UIImageView *layer3;
 @property (weak, nonatomic) IBOutlet UIImageView *layer4;
-
+@property (weak, nonatomic) IBOutlet UIImageView *hatLayer;
+@property int hatStatus;
 @end
 
 @implementation ViewController
@@ -27,11 +28,14 @@
 @synthesize layer2;
 @synthesize layer3;
 @synthesize layer4;
+@synthesize hatLayer;
+@synthesize hatStatus;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    hatStatus = 0;
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,6 +61,12 @@
 }
 
 - (IBAction)toggleHat:(id)sender {
-    [displayImage setImage:[UIImage imageNamed: @"hat.png"]];
+    hatStatus = 1 - hatStatus;
+    if (hatStatus == 1) {
+        [hatLayer setImage:[UIImage imageNamed: @"hat.png"]];
+    } else {
+        [hatLayer setImage:[UIImage imageNamed: @"empty.png"]];
+    }
 }
+
 @end
