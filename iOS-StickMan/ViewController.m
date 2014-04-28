@@ -9,10 +9,16 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)drawHappyMan:(id)sender;
+- (IBAction)drawSadMan:(id)sender;
+- (IBAction)toggleHat:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *displayImage;
 
 @end
 
 @implementation ViewController
+
+@synthesize displayImage;
 
 - (void)viewDidLoad
 {
@@ -26,4 +32,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)drawHappyMan:(id)sender {
+    [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
+}
+
+- (IBAction)drawSadMan:(id)sender {
+}
+
+- (IBAction)toggleHat:(id)sender {
+    [displayImage setImage:[UIImage imageNamed: @"hat.png"]];
+}
 @end
