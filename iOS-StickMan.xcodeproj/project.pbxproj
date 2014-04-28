@@ -22,6 +22,16 @@
 		1E85ADB1190E319000939748 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADAF190E319000939748 /* InfoPlist.strings */; };
 		1E85ADB3190E319000939748 /* iOS_StickManTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E85ADB2190E319000939748 /* iOS_StickManTests.m */; };
 		1E85ADBD190E31D100939748 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADBC190E31D100939748 /* background.png */; };
+		1E85ADC8190E332E00939748 /* legs.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADBE190E332E00939748 /* legs.png */; };
+		1E85ADC9190E332E00939748 /* baseline.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADBF190E332E00939748 /* baseline.png */; };
+		1E85ADCA190E332E00939748 /* rightHandUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC0190E332E00939748 /* rightHandUp.png */; };
+		1E85ADCB190E332E00939748 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC1190E332E00939748 /* happy.png */; };
+		1E85ADCC190E332E00939748 /* hat.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC2190E332E00939748 /* hat.png */; };
+		1E85ADCD190E332E00939748 /* legsJumping.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC3190E332E00939748 /* legsJumping.png */; };
+		1E85ADCE190E332E00939748 /* leftHandUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC4190E332E00939748 /* leftHandUp.png */; };
+		1E85ADCF190E332E00939748 /* leftHandDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC5190E332E00939748 /* leftHandDown.png */; };
+		1E85ADD0190E332E00939748 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC6190E332E00939748 /* sad.png */; };
+		1E85ADD1190E332E00939748 /* rightHandDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADC7190E332E00939748 /* rightHandDown.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,16 @@
 		1E85ADB0190E319000939748 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E85ADB2190E319000939748 /* iOS_StickManTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_StickManTests.m; sourceTree = "<group>"; };
 		1E85ADBC190E31D100939748 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		1E85ADBE190E332E00939748 /* legs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legs.png; sourceTree = "<group>"; };
+		1E85ADBF190E332E00939748 /* baseline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline.png; sourceTree = "<group>"; };
+		1E85ADC0190E332E00939748 /* rightHandUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightHandUp.png; sourceTree = "<group>"; };
+		1E85ADC1190E332E00939748 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
+		1E85ADC2190E332E00939748 /* hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat.png; sourceTree = "<group>"; };
+		1E85ADC3190E332E00939748 /* legsJumping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legsJumping.png; sourceTree = "<group>"; };
+		1E85ADC4190E332E00939748 /* leftHandUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftHandUp.png; sourceTree = "<group>"; };
+		1E85ADC5190E332E00939748 /* leftHandDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftHandDown.png; sourceTree = "<group>"; };
+		1E85ADC6190E332E00939748 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
+		1E85ADC7190E332E00939748 /* rightHandDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightHandDown.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +148,16 @@
 		1E85AD8E190E319000939748 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E85ADBE190E332E00939748 /* legs.png */,
+				1E85ADBF190E332E00939748 /* baseline.png */,
+				1E85ADC0190E332E00939748 /* rightHandUp.png */,
+				1E85ADC1190E332E00939748 /* happy.png */,
+				1E85ADC2190E332E00939748 /* hat.png */,
+				1E85ADC3190E332E00939748 /* legsJumping.png */,
+				1E85ADC4190E332E00939748 /* leftHandUp.png */,
+				1E85ADC5190E332E00939748 /* leftHandDown.png */,
+				1E85ADC6190E332E00939748 /* sad.png */,
+				1E85ADC7190E332E00939748 /* rightHandDown.png */,
 				1E85ADBC190E31D100939748 /* background.png */,
 				1E85AD8F190E319000939748 /* iOS-StickMan-Info.plist */,
 				1E85AD90190E319000939748 /* InfoPlist.strings */,
@@ -232,9 +262,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E85ADA0190E319000939748 /* Images.xcassets in Resources */,
+				1E85ADCE190E332E00939748 /* leftHandUp.png in Resources */,
+				1E85ADC8190E332E00939748 /* legs.png in Resources */,
 				1E85AD92190E319000939748 /* InfoPlist.strings in Resources */,
 				1E85AD9B190E319000939748 /* Main.storyboard in Resources */,
+				1E85ADCF190E332E00939748 /* leftHandDown.png in Resources */,
+				1E85ADD0190E332E00939748 /* sad.png in Resources */,
+				1E85ADD1190E332E00939748 /* rightHandDown.png in Resources */,
+				1E85ADCA190E332E00939748 /* rightHandUp.png in Resources */,
+				1E85ADC9190E332E00939748 /* baseline.png in Resources */,
+				1E85ADCC190E332E00939748 /* hat.png in Resources */,
+				1E85ADCB190E332E00939748 /* happy.png in Resources */,
 				1E85ADBD190E31D100939748 /* background.png in Resources */,
+				1E85ADCD190E332E00939748 /* legsJumping.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
