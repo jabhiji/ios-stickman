@@ -12,11 +12,13 @@
 - (IBAction)drawHappyMan:(id)sender;
 - (IBAction)drawSadMan:(id)sender;
 - (IBAction)toggleHat:(id)sender;
+- (IBAction)readTheNews:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *displayImage;
 @property (weak, nonatomic) IBOutlet UIImageView *layer1;
 @property (weak, nonatomic) IBOutlet UIImageView *layer2;
 @property (weak, nonatomic) IBOutlet UIImageView *layer3;
 @property (weak, nonatomic) IBOutlet UIImageView *layer4;
+@property (weak, nonatomic) IBOutlet UIImageView *newsLayer;
 @property (weak, nonatomic) IBOutlet UIImageView *hatLayer;
 @property int hatStatus;
 @end
@@ -29,6 +31,7 @@
 @synthesize layer3;
 @synthesize layer4;
 @synthesize hatLayer;
+@synthesize newsLayer;
 @synthesize hatStatus;
 
 - (void)viewDidLoad
@@ -50,6 +53,7 @@
     [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandUp.png"]];
     [layer4       setImage:[UIImage imageNamed: @"rightHandUp.png"]];
+    [newsLayer    setImage:[UIImage imageNamed: @"empty.png"]];
 }
 
 - (IBAction)drawSadMan:(id)sender {
@@ -58,6 +62,7 @@
     [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandDown.png"]];
     [layer4       setImage:[UIImage imageNamed: @"rightHandDown.png"]];
+    [newsLayer    setImage:[UIImage imageNamed: @"empty.png"]];
 }
 
 - (IBAction)toggleHat:(id)sender {
@@ -67,6 +72,12 @@
     } else {
         [hatLayer setImage:[UIImage imageNamed: @"empty.png"]];
     }
+}
+
+- (IBAction)readTheNews:(id)sender {
+    [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
+    [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
+    [newsLayer    setImage:[UIImage imageNamed: @"readThePaper.png"]];
 }
 
 @end

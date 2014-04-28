@@ -36,6 +36,8 @@
 		1E85ADD7190E3DA800939748 /* hatButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADD4190E3DA800939748 /* hatButton.png */; };
 		1E85ADD8190E3DA800939748 /* sadButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADD5190E3DA800939748 /* sadButton.png */; };
 		1E85ADD9190E3DA800939748 /* happyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADD6190E3DA800939748 /* happyButton.png */; };
+		1E85ADDB190F001B00939748 /* readButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADDA190F001B00939748 /* readButton.png */; };
+		1E85ADDD190F016900939748 /* readThePaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADDC190F016900939748 /* readThePaper.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		1E85ADD4190E3DA800939748 /* hatButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hatButton.png; sourceTree = "<group>"; };
 		1E85ADD5190E3DA800939748 /* sadButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sadButton.png; sourceTree = "<group>"; };
 		1E85ADD6190E3DA800939748 /* happyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happyButton.png; sourceTree = "<group>"; };
+		1E85ADDA190F001B00939748 /* readButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = readButton.png; sourceTree = "<group>"; };
+		1E85ADDC190F016900939748 /* readThePaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = readThePaper.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,8 @@
 		1E85AD8E190E319000939748 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E85ADDC190F016900939748 /* readThePaper.png */,
+				1E85ADDA190F001B00939748 /* readButton.png */,
 				1E85ADD4190E3DA800939748 /* hatButton.png */,
 				1E85ADD5190E3DA800939748 /* sadButton.png */,
 				1E85ADD6190E3DA800939748 /* happyButton.png */,
@@ -285,9 +291,11 @@
 				1E85ADD7190E3DA800939748 /* hatButton.png in Resources */,
 				1E85ADCA190E332E00939748 /* rightHandUp.png in Resources */,
 				1E85ADD8190E3DA800939748 /* sadButton.png in Resources */,
+				1E85ADDB190F001B00939748 /* readButton.png in Resources */,
 				1E85ADD9190E3DA800939748 /* happyButton.png in Resources */,
 				1E85ADC9190E332E00939748 /* baseline.png in Resources */,
 				1E85ADCC190E332E00939748 /* hat.png in Resources */,
+				1E85ADDD190F016900939748 /* readThePaper.png in Resources */,
 				1E85ADCB190E332E00939748 /* happy.png in Resources */,
 				1E85ADBD190E31D100939748 /* background.png in Resources */,
 				1E85ADCD190E332E00939748 /* legsJumping.png in Resources */,
