@@ -21,6 +21,7 @@
 		1E85ADA9190E319000939748 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E85AD8B190E319000939748 /* UIKit.framework */; };
 		1E85ADB1190E319000939748 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADAF190E319000939748 /* InfoPlist.strings */; };
 		1E85ADB3190E319000939748 /* iOS_StickManTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E85ADB2190E319000939748 /* iOS_StickManTests.m */; };
+		1E85ADBD190E31D100939748 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E85ADBC190E31D100939748 /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1E85ADAE190E319000939748 /* iOS-StickManTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-StickManTests-Info.plist"; sourceTree = "<group>"; };
 		1E85ADB0190E319000939748 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E85ADB2190E319000939748 /* iOS_StickManTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_StickManTests.m; sourceTree = "<group>"; };
+		1E85ADBC190E31D100939748 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		1E85AD8E190E319000939748 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E85ADBC190E31D100939748 /* background.png */,
 				1E85AD8F190E319000939748 /* iOS-StickMan-Info.plist */,
 				1E85AD90190E319000939748 /* InfoPlist.strings */,
 				1E85AD93190E319000939748 /* main.m */,
@@ -231,6 +234,7 @@
 				1E85ADA0190E319000939748 /* Images.xcassets in Resources */,
 				1E85AD92190E319000939748 /* InfoPlist.strings in Resources */,
 				1E85AD9B190E319000939748 /* Main.storyboard in Resources */,
+				1E85ADBD190E31D100939748 /* background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
