@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *layer4;
 @property (weak, nonatomic) IBOutlet UIImageView *newsLayer;
 @property (weak, nonatomic) IBOutlet UIImageView *hatLayer;
+@property (weak, nonatomic) IBOutlet UILabel *stickManSays;
 @property int hatStatus;
 @end
 
@@ -32,6 +33,7 @@
 @synthesize layer4;
 @synthesize hatLayer;
 @synthesize newsLayer;
+@synthesize stickManSays;
 @synthesize hatStatus;
 
 - (void)viewDidLoad
@@ -39,6 +41,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     hatStatus = 0;
+    [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
+    [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
+    [layer3       setImage:[UIImage imageNamed: @"leftHandUp.png"]];
+    [layer4       setImage:[UIImage imageNamed: @"rightHandUp.png"]];
+    stickManSays.text = [NSString stringWithFormat:@"hello! I am Stick Man."];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,21 +55,19 @@
 }
 
 - (IBAction)drawHappyMan:(id)sender {
-    [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
     [layer1       setImage:[UIImage imageNamed: @"happy.png"]];
-    [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandUp.png"]];
     [layer4       setImage:[UIImage imageNamed: @"rightHandUp.png"]];
     [newsLayer    setImage:[UIImage imageNamed: @"empty.png"]];
+    stickManSays.text = [NSString stringWithFormat:@"Life is good!"];
 }
 
 - (IBAction)drawSadMan:(id)sender {
-    [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
     [layer1       setImage:[UIImage imageNamed: @"sad.png"]];
-    [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandDown.png"]];
     [layer4       setImage:[UIImage imageNamed: @"rightHandDown.png"]];
     [newsLayer    setImage:[UIImage imageNamed: @"empty.png"]];
+    stickManSays.text = [NSString stringWithFormat:@"My code doesn't run"];
 }
 
 - (IBAction)toggleHat:(id)sender {
@@ -78,6 +83,7 @@
     [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
     [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
     [newsLayer    setImage:[UIImage imageNamed: @"readThePaper.png"]];
+    stickManSays.text = [NSString stringWithFormat:@"Any news about iPhone 6?"];
 }
 
 @end
