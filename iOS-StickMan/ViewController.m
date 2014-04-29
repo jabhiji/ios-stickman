@@ -45,7 +45,7 @@
     [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandUp.png"]];
     [layer4       setImage:[UIImage imageNamed: @"rightHandUp.png"]];
-    stickManSays.text = [NSString stringWithFormat:@"hello! I am Stick Man."];
+    stickManSays.text = [NSString stringWithFormat:@"Hello! I am Stick Man."];
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,7 +83,7 @@
     [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
     [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
     [newsLayer    setImage:[UIImage imageNamed: @"readThePaper.png"]];
-    stickManSays.text = [NSString stringWithFormat:@"Any news about iPhone 6?"];
+    stickManSays.text = [NSString stringWithFormat:@"Anything about iPhone 6?"];
 }
 
 @end
