@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *newsLayer;
 @property (weak, nonatomic) IBOutlet UIImageView *hatLayer;
 @property (weak, nonatomic) IBOutlet UIImageView *pendulumLayer;
+@property (weak, nonatomic) IBOutlet UIImageView *eyeLayer;
 @property (weak, nonatomic) IBOutlet UILabel *stickManSays;
 @property int hatStatus;
 @end
@@ -37,6 +38,7 @@
 @synthesize hatLayer;
 @synthesize newsLayer;
 @synthesize pendulumLayer;
+@synthesize eyeLayer;
 @synthesize stickManSays;
 @synthesize hatStatus;
 
@@ -60,6 +62,7 @@
     [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandUp.png"]];
     [layer4       setImage:[UIImage imageNamed: @"rightHandUp.png"]];
+    [eyeLayer     setImage:[UIImage imageNamed: @"eyes.png"]];
     stickManSays.text = [NSString stringWithFormat:@"Hello! I am Stick Man."];
 }
 
@@ -67,7 +70,9 @@
     [layer3 stopAnimating];
     [layer4 stopAnimating];
     [pendulumLayer stopAnimating];
-    
+    [eyeLayer stopAnimating];
+
+    [eyeLayer     setImage:[UIImage imageNamed: @"eyes.png"]];
     [layer1       setImage:[UIImage imageNamed: @"happy.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandUp.png"]];
     [layer4       setImage:[UIImage imageNamed: @"rightHandUp.png"]];
@@ -79,7 +84,9 @@
     [layer3 stopAnimating];
     [layer4 stopAnimating];
     [pendulumLayer stopAnimating];
+    [eyeLayer stopAnimating];
     
+    [eyeLayer     setImage:[UIImage imageNamed: @"eyes.png"]];
     [layer1       setImage:[UIImage imageNamed: @"sad.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandDown.png"]];
     [layer4       setImage:[UIImage imageNamed: @"rightHandDown.png"]];
@@ -102,14 +109,34 @@
     [pendulumLayer stopAnimating];
     
     [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
+    [eyeLayer     setImage:[UIImage imageNamed: @"empty.png"]];
     [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
     [newsLayer    setImage:[UIImage imageNamed: @"readThePaper.png"]];
+    
     stickManSays.text = [NSString stringWithFormat:@"Anything about iPhone 6?"];
+
+    // Load image sequence for pendulum motion
+    NSArray *imagesEyes = @[@"eyesRight.png",
+                            @"eyes.png",
+                            @"eyesLeft.png",
+                            @"eyes.png"];
+    
+    NSMutableArray *imageSeqEyes = [[NSMutableArray alloc] init];
+    for (int i = 0; i < imagesEyes.count; i++) {
+        [imageSeqEyes addObject:[UIImage imageNamed:[imagesEyes objectAtIndex:i]]];
+    }
+    
+    // start animation in the pendulum layer
+    eyeLayer.animationImages = imageSeqEyes;
+    eyeLayer.animationDuration = 4.0;
+    [eyeLayer startAnimating];
 }
 
 - (IBAction)flapHands:(id)sender {
     [pendulumLayer stopAnimating];
+    [eyeLayer stopAnimating];
     
+    [eyeLayer     setImage:[UIImage imageNamed: @"eyes.png"]];
     [layer1       setImage:[UIImage imageNamed: @"happy.png"]];
     [layer3       setImage:[UIImage imageNamed: @"empty.png"]];
     [layer4       setImage:[UIImage imageNamed: @"empty.png"]];
@@ -145,7 +172,9 @@
 - (IBAction)usePendulum:(id)sender {
     [layer3 stopAnimating];
     [layer4 stopAnimating];
-    
+    [eyeLayer stopAnimating];
+
+    [eyeLayer     setImage:[UIImage imageNamed: @"eyes.png"]];
     [layer1       setImage:[UIImage imageNamed: @"happy.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandHorizontal.png"]];
     [layer4       setImage:[UIImage imageNamed: @"rightHandUp.png"]];
