@@ -113,6 +113,20 @@
                                     <action selector="flapHands:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iNC-Mv-YN9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZp-q1-GP0">
+                                <rect key="frame" x="94" y="381" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="pendulumButton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="usePendulum:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eL8-Dc-4hw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lM9-z4-8Vm">
+                                <rect key="frame" x="40" y="80" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -124,11 +138,13 @@
                         <outlet property="layer3" destination="wgd-bs-SY2" id="AWO-Qh-vJh"/>
                         <outlet property="layer4" destination="agT-id-O4f" id="oyo-bl-hjq"/>
                         <outlet property="newsLayer" destination="A5e-TM-MKN" id="kg2-HK-1PX"/>
+                        <outlet property="pendulumLayer" destination="lM9-z4-8Vm" id="KGD-dl-Oqy"/>
                         <outlet property="stickManSays" destination="hp0-cd-auw" id="13t-Rf-KYk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="44" y="69"/>
         </scene>
     </scenes>
     <resources>
@@ -136,6 +152,7 @@
         <image name="flyButton.png" width="342" height="148"/>
         <image name="happyButton.png" width="280" height="120"/>
         <image name="hatButton.png" width="280" height="120"/>
+        <image name="pendulumButton.png" width="344" height="150"/>
         <image name="readButton.png" width="280" height="120"/>
         <image name="sadButton.png" width="280" height="120"/>
     </resources>

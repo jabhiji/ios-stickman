@@ -14,6 +14,7 @@
 - (IBAction)toggleHat:(id)sender;
 - (IBAction)readTheNews:(id)sender;
 - (IBAction)flapHands:(id)sender;
+- (IBAction)usePendulum:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *displayImage;
 @property (weak, nonatomic) IBOutlet UIImageView *layer1;
 @property (weak, nonatomic) IBOutlet UIImageView *layer2;
@@ -21,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *layer4;
 @property (weak, nonatomic) IBOutlet UIImageView *newsLayer;
 @property (weak, nonatomic) IBOutlet UIImageView *hatLayer;
+@property (weak, nonatomic) IBOutlet UIImageView *pendulumLayer;
 @property (weak, nonatomic) IBOutlet UILabel *stickManSays;
 @property int hatStatus;
 @end
@@ -34,6 +36,7 @@
 @synthesize layer4;
 @synthesize hatLayer;
 @synthesize newsLayer;
+@synthesize pendulumLayer;
 @synthesize stickManSays;
 @synthesize hatStatus;
 
@@ -41,12 +44,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    hatStatus = 0;
-    [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
-    [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
-    [layer3       setImage:[UIImage imageNamed: @"leftHandUp.png"]];
-    [layer4       setImage:[UIImage imageNamed: @"rightHandUp.png"]];
-    stickManSays.text = [NSString stringWithFormat:@"Hello! I am Stick Man."];
+    [self initialize];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,9 +53,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) initialize
+{
+    hatStatus = 0;
+    [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
+    [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
+    [layer3       setImage:[UIImage imageNamed: @"leftHandUp.png"]];
+    [layer4       setImage:[UIImage imageNamed: @"rightHandUp.png"]];
+    stickManSays.text = [NSString stringWithFormat:@"Hello! I am Stick Man."];
+}
+
 - (IBAction)drawHappyMan:(id)sender {
     [layer3 stopAnimating];
     [layer4 stopAnimating];
+    [pendulumLayer stopAnimating];
     
     [layer1       setImage:[UIImage imageNamed: @"happy.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandUp.png"]];
@@ -69,6 +78,7 @@
 - (IBAction)drawSadMan:(id)sender {
     [layer3 stopAnimating];
     [layer4 stopAnimating];
+    [pendulumLayer stopAnimating];
     
     [layer1       setImage:[UIImage imageNamed: @"sad.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandDown.png"]];
@@ -89,6 +99,7 @@
 - (IBAction)readTheNews:(id)sender {
     [layer3 stopAnimating];
     [layer4 stopAnimating];
+    [pendulumLayer stopAnimating];
     
     [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
     [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
@@ -97,6 +108,8 @@
 }
 
 - (IBAction)flapHands:(id)sender {
+    [pendulumLayer stopAnimating];
+    
     [layer1       setImage:[UIImage imageNamed: @"happy.png"]];
     [layer3       setImage:[UIImage imageNamed: @"empty.png"]];
     [layer4       setImage:[UIImage imageNamed: @"empty.png"]];
@@ -129,8 +142,29 @@
     [layer4 startAnimating];
 }
 
-- (void) animateHandFlap
-{
+- (IBAction)usePendulum:(id)sender {
+    [layer3 stopAnimating];
+    [layer4 stopAnimating];
+    
+    [layer1       setImage:[UIImage imageNamed: @"happy.png"]];
+    [layer3       setImage:[UIImage imageNamed: @"leftHandHorizontal.png"]];
+    [layer4       setImage:[UIImage imageNamed: @"rightHandUp.png"]];
+    [newsLayer    setImage:[UIImage imageNamed: @"empty.png"]];
+    
+    stickManSays.text = [NSString stringWithFormat:@"Check out my pendulum.."];
+
+    // Load image sequence for pendulum motion
+    NSArray *imagesPendulum = @[@"pendulum1.png", @"pendulum2.png"];
+    
+    NSMutableArray *imageSeqPendulum = [[NSMutableArray alloc] init];
+    for (int i = 0; i < imagesPendulum.count; i++) {
+        [imageSeqPendulum addObject:[UIImage imageNamed:[imagesPendulum objectAtIndex:i]]];
+    }
+    
+    // start animation in the pendulum layer
+    pendulumLayer.animationImages = imageSeqPendulum;
+    pendulumLayer.animationDuration = 0.75;
+    [pendulumLayer startAnimating];
 }
 
 @end
