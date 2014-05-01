@@ -13,6 +13,7 @@
 - (IBAction)drawSadMan:(id)sender;
 - (IBAction)toggleHat:(id)sender;
 - (IBAction)readTheNews:(id)sender;
+- (IBAction)flapHands:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *displayImage;
 @property (weak, nonatomic) IBOutlet UIImageView *layer1;
 @property (weak, nonatomic) IBOutlet UIImageView *layer2;
@@ -55,6 +56,9 @@
 }
 
 - (IBAction)drawHappyMan:(id)sender {
+    [layer3 stopAnimating];
+    [layer4 stopAnimating];
+    
     [layer1       setImage:[UIImage imageNamed: @"happy.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandUp.png"]];
     [layer4       setImage:[UIImage imageNamed: @"rightHandUp.png"]];
@@ -63,6 +67,9 @@
 }
 
 - (IBAction)drawSadMan:(id)sender {
+    [layer3 stopAnimating];
+    [layer4 stopAnimating];
+    
     [layer1       setImage:[UIImage imageNamed: @"sad.png"]];
     [layer3       setImage:[UIImage imageNamed: @"leftHandDown.png"]];
     [layer4       setImage:[UIImage imageNamed: @"rightHandDown.png"]];
@@ -80,10 +87,50 @@
 }
 
 - (IBAction)readTheNews:(id)sender {
+    [layer3 stopAnimating];
+    [layer4 stopAnimating];
+    
     [displayImage setImage:[UIImage imageNamed: @"baseline.png"]];
     [layer2       setImage:[UIImage imageNamed: @"legs.png"]];
     [newsLayer    setImage:[UIImage imageNamed: @"readThePaper.png"]];
     stickManSays.text = [NSString stringWithFormat:@"Anything about iPhone 6?"];
+}
+
+- (IBAction)flapHands:(id)sender {
+    [layer1       setImage:[UIImage imageNamed: @"happy.png"]];
+    [layer3       setImage:[UIImage imageNamed: @"empty.png"]];
+    [layer4       setImage:[UIImage imageNamed: @"empty.png"]];
+    [newsLayer    setImage:[UIImage imageNamed: @"empty.png"]];
+
+    stickManSays.text = [NSString stringWithFormat:@"I am flying!"];
+
+    // Load image sequences for left hand and right hand
+    NSArray *imagesL = @[@"leftHandUp.png", @"leftHandDown.png"];
+    NSArray *imagesR = @[@"rightHandUp.png", @"rightHandDown.png"];
+    
+    NSMutableArray *imageSeqL = [[NSMutableArray alloc] init];
+    for (int i = 0; i < imagesL.count; i++) {
+        [imageSeqL addObject:[UIImage imageNamed:[imagesL objectAtIndex:i]]];
+    }
+    
+    NSMutableArray *imageSeqR = [[NSMutableArray alloc] init];
+    for (int i = 0; i < imagesR.count; i++) {
+        [imageSeqR addObject:[UIImage imageNamed:[imagesR objectAtIndex:i]]];
+    }
+    
+    // start animation in layer3
+    layer3.animationImages = imageSeqL;
+    layer3.animationDuration = 1.0;
+    [layer3 startAnimating];
+
+    // start animation in layer4
+    layer4.animationImages = imageSeqR;
+    layer4.animationDuration = 1.0;
+    [layer4 startAnimating];
+}
+
+- (void) animateHandFlap
+{
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E4E132319124F980035BDC1 /* flyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4E132219124F980035BDC1 /* flyButton.png */; };
 		1E85AD88190E319000939748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E85AD87190E319000939748 /* Foundation.framework */; };
 		1E85AD8A190E319000939748 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E85AD89190E319000939748 /* CoreGraphics.framework */; };
 		1E85AD8C190E319000939748 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E85AD8B190E319000939748 /* UIKit.framework */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E4E132219124F980035BDC1 /* flyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flyButton.png; sourceTree = "<group>"; };
 		1E85AD84190E319000939748 /* iOS-StickMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-StickMan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E85AD87190E319000939748 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E85AD89190E319000939748 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -163,6 +165,7 @@
 				1E85ADDC190F016900939748 /* readThePaper.png */,
 				1E85ADDA190F001B00939748 /* readButton.png */,
 				1E85ADD4190E3DA800939748 /* hatButton.png */,
+				1E4E132219124F980035BDC1 /* flyButton.png */,
 				1E85ADD5190E3DA800939748 /* sadButton.png */,
 				1E85ADD6190E3DA800939748 /* happyButton.png */,
 				1E85ADD2190E3C7500939748 /* empty.png */,
@@ -281,6 +284,7 @@
 			files = (
 				1E85ADA0190E319000939748 /* Images.xcassets in Resources */,
 				1E85ADCE190E332E00939748 /* leftHandUp.png in Resources */,
+				1E4E132319124F980035BDC1 /* flyButton.png in Resources */,
 				1E85ADD3190E3C7500939748 /* empty.png in Resources */,
 				1E85ADC8190E332E00939748 /* legs.png in Resources */,
 				1E85AD92190E319000939748 /* InfoPlist.strings in Resources */,
@@ -447,6 +451,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-StickMan/iOS-StickMan-Prefix.pch";
 				INFOPLIST_FILE = "iOS-StickMan/iOS-StickMan-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +465,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-StickMan/iOS-StickMan-Prefix.pch";
 				INFOPLIST_FILE = "iOS-StickMan/iOS-StickMan-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -524,6 +530,7 @@
 				1E85ADB8190E319000939748 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E85ADB9190E319000939748 /* Build configuration list for PBXNativeTarget "iOS-StickManTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +539,7 @@
 				1E85ADBB190E319000939748 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
